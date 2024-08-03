@@ -53,10 +53,3 @@ Check out the full project video on YouTube to see the step-by-step implementati
 ## Acknowledgments
 
 Special thanks to [Extion Infotech](https://www.linkedin.com/company/extion-infotech/mycompany/verification/) for providing the platform and resources to develop this project.
-
-## Contact
-
-Feel free to reach out if you have any questions or suggestions!
-
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-- **Email:** your.email@example.com
