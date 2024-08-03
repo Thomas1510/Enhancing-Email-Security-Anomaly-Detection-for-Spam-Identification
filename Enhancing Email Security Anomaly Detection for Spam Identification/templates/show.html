@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <title>Email Spam Classifier</title>
+  <style>
+    .navbar-brand {
+      padding-left: 0 !important;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .footer-description {
+      color: #6c757d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Email Spam Detector</a>
+      <span class="navbar-text">Enhancing Email Security Anomaly Detection for Spam Identification - Created by: Thomas A</span>
+    </div>
+  </nav>
+
+  <!-- Show -->
+  <div class="container mt-4">
+    <h3>Email Spam Detector's Result</h3>
+    <p>Thanks for using my application.</p>
+    <a href="/">
+      <button class="btn btn-outline-success" type="submit">Go Back</button>
+    </a>
+  </div>
+
+  <!-- Result -->
+  <div class="container mt-4">
+    {% if prediction==1 %}
+    <h1>Prediction: <span class='text-danger'>Gotcha! This is a SPAM message.</span></h1>
+    {% elif prediction==0 %}
+    <h1>Prediction: <span class='text-success'>Great! This is NOT a spam message.</span></h1>
+    {% endif %}
+  </div>
+
+
+</body>
+
+</html>
